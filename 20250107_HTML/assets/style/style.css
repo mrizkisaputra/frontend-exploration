@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/quicksand-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        color: red;
+    }
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+body {
+    font-family: 'Quicksand', serif;
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3 {
+    color: #00a2c6;
+}
+
+/*================================================================*/
+/*header*/
+header nav a {
+    font-size: larger;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+}
+
+header .jumbotron {
+    font-size: 20px;
+    background-color: #00c8eb;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+header {
+    display: inline;
+}
+
+header nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+/*==================================================================*/
+/*main*/
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+main aside header {
+    text-align: center;
+}
+
+main .featured-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+main .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main #content {
+    float: left;
+    width: 75%;
+}
+
+main aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/*=================================================================*/
+/*footer*/
+footer {
+    color: white;
+    padding: 0.5em;
+    background-color: #00a2c6;
+    font-weight: bold;
+    text-align: center;
+}
